@@ -30,7 +30,7 @@ public class CalculatorTest {
 
     @Test(expectedExceptions = ArithmeticException.class)
     public void testException() {
-        int resultDivideZero = ConsoleCalculator.operation(5, "/", 0);
+        ConsoleCalculator.operation(5, "/", 0);
     }
 }
 
