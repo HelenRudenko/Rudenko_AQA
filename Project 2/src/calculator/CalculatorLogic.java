@@ -27,6 +27,11 @@ public class CalculatorLogic {
 
         System.out.println(ConsoleCalculator.operation(number1, operation, number2));
 
+        try {
+            System.out.println(3 / 0);
+        } catch (Exception e) {
+            System.out.println("Исключение:" + e.getMessage());
+        }
     }
 }
 
