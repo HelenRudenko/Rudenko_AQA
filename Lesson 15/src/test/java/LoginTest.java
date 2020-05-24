@@ -7,17 +7,18 @@ public class LoginTest extends BaseTest {
     @Test
     public void testValidLogin() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.setLoginData(Data.LOGIN);
-        loginPage.setPasswordData(Data.PASSWORD);
+        loginPage.setLogin(Data.LOGIN);
+        loginPage.setPassword(Data.PASSWORD);
         loginPage.clickEnterButton();
         String url = driver.getCurrentUrl();
-        Assert.assertTrue(url.contains("mail.i.ua"));
+        Assert.assertTrue(url.contains("mbox2"));
     }
+
     @Test
     public void testInvalidLogin() {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.setLoginData(Data.INVALID_LOGIN);
-        loginPage.setPasswordData(Data.INVALID_PASSWORD);
+        loginPage.setLogin(Data.INVALID_LOGIN);
+        loginPage.setPassword(Data.INVALID_PASSWORD);
         loginPage.clickEnterButton();
         String url = driver.getCurrentUrl();
         Assert.assertTrue(url.contains("passport"));

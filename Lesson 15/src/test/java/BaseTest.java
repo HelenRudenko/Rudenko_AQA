@@ -2,6 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import pages.Data;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +13,7 @@ public abstract class BaseTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://www.i.ua/");
+        driver.get(Data.URL);
     }
 
     @AfterMethod
