@@ -1,5 +1,6 @@
+import data.Data;
 import org.testng.annotations.BeforeMethod;
-import pages.Data;
+
 
 import static com.codeborne.selenide.Selenide.open;
 

@@ -1,6 +1,7 @@
+import data.Data;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.Data;
+
 import pages.LoginPage;
 
 import static com.codeborne.selenide.WebDriverRunner.url;

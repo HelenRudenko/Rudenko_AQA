@@ -1,4 +1,4 @@
-package pages;
+package data;
 
 public class Data {
     public static final String LOGIN = "olena1993@i.ua";
