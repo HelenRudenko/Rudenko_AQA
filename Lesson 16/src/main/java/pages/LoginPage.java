@@ -8,8 +8,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
     private SelenideElement login = $(By.xpath("//form/ul/li/p/input"));
-    private WebElement password = $(By.xpath("//div/div/form/ul/li[1]/input"));
-    private WebElement enter = $(By.xpath("//div/div/form/p/input"));
+    private SelenideElement password = $(By.xpath("//div/div/form/ul/li[1]/input"));
+    private SelenideElement enter = $(By.xpath("//div/div/form/p/input"));
 
     public void setLoginData(String loginData) {
         login.sendKeys(loginData);
